@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PakaiSaja</title>
+    <link rel="stylesheet" href="Source Code_Fransiskus_Reikinata_Koesprasetyo.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#beranda" class="logo">
+                <img src="images/Logo.png" alt="Logo PakaiSaja">
+            </a>
+        
+            <div class="menu">
+                <a href="#tentang">Tentang</a>
+                <a href="#paduan">Paduan Outfit</a>
+                <a href="#saran">Saran</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <p class="label">PANDUAN OUTFIT EARTH TONE</p>
+            <h1>Style Sederhana<br><span>dengan Warna Natural.</span></h1>
+
+            <p>
+                Kenali earth tone dan temukan inspirasi outfit cowok
+                yang simpel untuk sehari-hari.
+            </p>
+
+            <a href="#paduan" class="tombol">Cari Inspirasi</a>
+        </section>
+
+        <section class="section" id="tentang">
+            <p class="label">KENALI WARNANYA</p>
+            <h2>Apa Itu Earth Tone?</h2>
+
+            <p class="deskripsi">
+                Earth tone adalah warna yang terinspirasi dari alam,
+                seperti tanah, daun, dan pasir. Warna ini mudah dipadukan
+                untuk menciptakan outfit yang simpel dan nyaman dilihat.
+            </p>
+
+            <div class="warna">
+                <div><span class="kotak putih"></span>Putih</div>
+                <div><span class="kotak cream"></span>Cream</div>
+                <div><span class="kotak olive"></span>Olive</div>
+                <div><span class="kotak cokelat"></span>Cokelat</div>
+            </div>
+
+            <h3>Tips Memadukan Warna</h3>
+            <ul>
+                <li>Gunakan putih atau cream sebagai warna netral.</li>
+                <li>Padukan olive dengan cream untuk tampilan santai.</li>
+                <li>Gunakan cokelat untuk kesan hangat.</li>
+            </ul>
+
+            <h3>Cara Memilih Outfit</h3>
+            <ol>
+                <li>Pilih atasan atau bawahan.</li>
+                <li>Pilih warna pakaian.</li>
+                <li>Lihat rekomendasi kombinasi outfit.</li>
+            </ol>
+
+            <h3>Contoh Kombinasi Warna</h3>
+            <table>
+                <tr>
+                    <th>Atasan</th>
+                    <th>Bawahan</th>
+                    <th>Kesan</th>
+                </tr>
+                <tr>
+                    <td>Putih</td>
+                    <td>Olive</td>
+                    <td>Santai</td>
+                </tr>
+                <tr>
+                    <td>Cream</td>
+                    <td>Cokelat</td>
+                    <td>Hangat</td>
+                </tr>
+                <tr>
+                    <td>Olive</td>
+                    <td>Cream</td>
+                    <td>Natural</td>
+                </tr>
+                <tr>
+                    <td>Cokelat</td>
+                    <td>Putih</td>
+                    <td>Kontras</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="section paduan" id="paduan">
+            <p class="label">FIND YOUR COMBINATION</p>
+            <h2>Temukan Paduan Outfit</h2>
+
+            <p class="deskripsi">
+                Pilih atasan atau bawahan, lalu tentukan warnanya.
+                PakaiSaja akan menampilkan tiga inspirasi kombinasi.
+            </p>
+
+            <div class="pilihan">
+                <div>
+                    <label for="jenis">Saya memilih</label>
+                    <select id="jenis">
+                        <option value="atasan">Atasan</option>
+                        <option value="bawahan">Bawahan</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="warna">Warna pilihan</label>
+                    <select id="warna">
+                        <option value="putih">Putih</option>
+                        <option value="cream">Cream</option>
+                        <option value="olive">Olive</option>
+                        <option value="cokelat">Cokelat</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3 id="judulHasil">Inspirasi Outfit</h3>
+            <div id="hasil" class="kartu-outfit"></div>
+        </section>
+
+        <section class="section" id="referensi">
+            <p class="label">SUMBER INSPIRASI</p>
+            <h2>Cari Inspirasi Lainnya</h2>
+
+            <p class="deskripsi">
+                Masih bingung memadukan warna? Cari referensi outfit
+                earth tone cowok di TikTok atau Pinterest.
+            </p>
+
+            <div class="referensi">
+                <a href="https://www.tiktok.com/search?q=mens%20earth%20tone%20outfit" target="_blank"
+                    rel="noopener noreferrer" class="tombol">
+                    Cari di TikTok
+                </a>
+
+                <a href="https://www.pinterest.com/search/pins/?q=mens%20earth%20tone%20outfit" target="_blank"
+                    rel="noopener noreferrer" class="tombol">
+                    Cari di Pinterest
+                </a>
+            </div>
+        </section>
+
+        <section class="section" id="saran">
+            <p class="label">FAQ.</p>
+            <h2>Pertanyaan atau Saran</h2>
+
+            <p class="deskripsi">
+                Punya saran untuk PakaiSaja? Ceritakan kepada kami.
+            </p>
+
+            <form id="formSaran">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" required placeholder="Nama kamu">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Email kamu">
+
+                <label for="pesan">Pertanyaan atau saran</label>
+                <textarea id="pesan" rows="4" required placeholder="Tulis masukan kamu..."></textarea>
+
+                <button type="submit" class="tombol">Kirim  </button>
+                <p id="pesanForm"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>PakaiSaja.</h3>
+        <p>Berpakaian simpel, tampil percaya diri.</p>
+        <p>
+            Email:
+            <a href="mailto:Fransreiki@gmail.com">Hubungi kami</a>
+        </p>
+        <p>&copy; 2026 PakaiSaja</p>
+        <a href="#beranda">Kembali ke atas</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

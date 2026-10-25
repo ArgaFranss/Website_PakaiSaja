@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf8f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.menu a,
+footer a {
+    color: #526044;
+    text-decoration: none;
+}
+
+.menu a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 90px 8%;
+    background-color: #e9e4d9;
+}
+
+.hero h1 {
+    font-size: 44px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #66734f;
+}
+
+.label {
+    color: #788064;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #596748;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tombol:hover {
+    background-color: #3e4a32;
+}
+
+.section {
+    padding: 55px 8%;
+}
+
+.section h2 {
+    font-size: 30px;
+}
+
+.deskripsi {
+    max-width: 650px;
+    color: #666;
+}
+
+.warna {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.kotak {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.putih {
+    background-color: white;
+}
+
+.cream {
+    background-color: #e8ddc5;
+}
+
+.olive {
+    background-color: #80845b;
+}
+
+.cokelat {
+    background-color: #79543b;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #e8e1d5;
+}
+
+.paduan {
+    background-color: #f0eee7;
+}
+
+.pilihan {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.pilihan div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.pilihan select {
+    min-width: 180px;
+}
+
+.kartu-outfit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.kartu {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.kartu img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.referensi {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form .tombol {
+    margin-top: 15px;
+}
+
+#pesanForm {
+    color: #526044;
+}
+
+footer {
+    padding: 30px 8%;
+    background-color: #e9e4d9;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .kartu {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
