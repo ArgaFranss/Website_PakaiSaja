@@ -82,7 +82,7 @@ document.getElementById("formSaran").addEventListener("submit", function (event)
     event.preventDefault();
 
     document.getElementById("pesanForm").textContent =
-        "Terima kasih! Saran kamu sudah diterima.";
+        "Terima kasih! Pesan kamu sudah diterima.";
 
     this.reset();
 });
